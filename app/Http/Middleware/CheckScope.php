@@ -34,6 +34,7 @@ class CheckScope
         $auth0 = \App::make('auth0');
 
         $accessToken = $request->bearerToken();
+        $accessToken = is_null($accessToken)? '':$accessToken;
         try {
             $tokenInfo = $auth0->decodeJWT($accessToken);
             $user = $this->userRepository->getUserByDecodedJWT($tokenInfo);

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Laravel Authorization for RS256-Signed Tokens
 
 This sample demonstrates how to protect endpoints in a Laravel API by verifying an incoming JWT access token signed by Auth0. The token must be signed with the RS256 algorithm and must be verified against your Auth0 JSON Web Key Set.
@@ -50,6 +49,4 @@ If you have found a bug or if you have a feature request, please report them at 
 ## License
 
 This project is licensed under the MIT license. See the `LICENSE` file for more info.
-=======
 # laravel-auth01
->>>>>>> 031b45e844aceb6ac8181e2242553dfbb8c2a753
