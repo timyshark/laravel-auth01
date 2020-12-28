@@ -14,7 +14,7 @@ return [
 
     'supportsCredentials' => true,
     // Whitelist of domains allowed to perform cross origin requests
-    'allowedOrigins' => ['http://localhost:3000'],
+    'allowedOrigins' => ['http://localhost:4200/'],
     'allowedOriginsPatterns' => [],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['*'],
