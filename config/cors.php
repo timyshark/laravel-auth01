@@ -11,10 +11,10 @@ return [
     | to accept any value.
     |
     */
-
+    'paths' => ['api/*'],
     'supportsCredentials' => true,
     // Whitelist of domains allowed to perform cross origin requests
-    'allowedOrigins' => ['http://localhost:4200/'],
+    'allowedOrigins' => ['http://localhost:4200'],
     'allowedOriginsPatterns' => [],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['*'],

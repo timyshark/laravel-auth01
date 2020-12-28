@@ -42,7 +42,6 @@ class CheckJWT
             }
 
             \Auth::login($user);
-
         } catch (InvalidTokenException $e) {
             return response()->json(["message" => $e->getMessage()], 401);
         } catch (CoreException $e) {

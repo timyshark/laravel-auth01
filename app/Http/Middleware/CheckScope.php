@@ -42,17 +42,19 @@ class CheckScope
                 return response()->json(["message" => "Unauthorized user"], 401);
             }
 
-            if($scope) {
+            if ($scope) {
                 $hasScope = false;
-                if(isset($tokenInfo['scope'])) {
+                if (isset($tokenInfo['scope'])) {
                     $scopes = explode(" ", $tokenInfo['scope']);
                     foreach ($scopes as $s) {
-                        if ($s === $scope)
+                        if ($s === $scope) {
                             $hasScope = true;
+                        }
                     }
-                } 
-                if(!$hasScope)
+                }
+                if (!$hasScope) {
                     return response()->json(["message" => "Insufficient scope"], 403);
+                }
 
                 \Auth::login($user);
             }
